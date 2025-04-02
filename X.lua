@@ -18,20 +18,20 @@ local Window = Fluent:CreateWindow({
 })
 local Options = Fluent.Options
 Fluent:Notify({
-        Title = "X",
+        Title = "X脚本",
         Content = "欢迎使用",
+        SubContent = "", 
+        Duration = 5
+})
+local Options = Fluent.Options
+Fluent:Notify({
+        Title = "X脚本",
+        Content = "按ctrl键显示",
         SubContent = "", 
         Duration = 5
 })
 local Tabs = {
     Main = Window:AddTab({ Title = "主要", Icon = "1" }),
-    Tab:AddButton({
-    Title = "测试",
-    Description = "Very important button",
-    Callback = function()
-        print("测试")
-    end
-})
     Settings = Window:AddTab({ Title = "设置", Icon = "2" })
 }
 Window:SelectTab(1)
