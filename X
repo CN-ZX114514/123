@@ -1,0 +1,32 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+function Init()
+    local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+end
+function Test()
+    print(Fluent.Options)
+end
+Init()
+Test()
+local Window = Fluent:CreateWindow({
+    Title = "X脚本" .. Fluent.Version,
+    SubTitle = "X完全免费",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = true, 
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.LeftControl
+})
+local Options = Fluent.Options
+Fluent:Notify({
+        Title = "X脚本",
+        Content = "欢迎使用",
+        SubContent = "欢迎UI", 
+        Duration = 5
+})
+local Tabs = {
+    Main = Window:AddTab({ Title = "主要", Icon = "1" }),
+    Settings = Window:AddTab({ Title = "脚本", Icon = "2" }),
+    Main = Window:AddTab({ Title = "其他", Icon = "3" }),
+    Main = Window:AddTab({ Title = "设置", Icon = "4" })
+}
+Window:SelectTab(1)
