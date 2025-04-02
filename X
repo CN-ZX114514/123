@@ -24,11 +24,11 @@ Fluent:Notify({
         Duration = 5
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "主要", Icon = "1" }),
-    Settings = Window:AddTab({ Title = "脚本", Icon = "2" }),
-    Main = Window:AddTab({ Title = "其他", Icon = "3" }),
-    Main = Window:AddTab({ Title = "FE", Icon = "4" }),
-    Main = Window:AddTab({ Title = "翻译脚本", Icon = "5" }),
-    Main = Window:AddTab({ Title = "设置", Icon = "6" })
+    Main = Window:AddTab({ Title = "主要", Icon = "boxes" }),
+    Settings = Window:AddTab({ Title = "脚本", Icon = "code" }),
+    Main = Window:AddTab({ Title = "其他", Icon = "code" }),
+    Main = Window:AddTab({ Title = "FE", Icon = "layout-list" }),
+    Main = Window:AddTab({ Title = "翻译", Icon = "code }),
+    Main = Window:AddTab({ Title = "设置", Icon = "settings" })
 }
 Window:SelectTab(1)
