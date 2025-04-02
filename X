@@ -28,7 +28,7 @@ local Tabs = {
     Settings = Window:AddTab({ Title = "脚本", Icon = "code" }),
     Main = Window:AddTab({ Title = "其他", Icon = "code" }),
     Main = Window:AddTab({ Title = "FE", Icon = "code" }),
-    Main = Window:AddTab({ Title = "翻译", Icon = "code" }),
+    Main = Window:AddTab({ Title = "翻译", Icon = "languages" }),
     Main = Window:AddTab({ Title = "设置", Icon = "settings" })
 }
 Window:SelectTab(1)
