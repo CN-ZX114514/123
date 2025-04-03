@@ -1,0 +1,33 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+function Init()
+    local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+end
+function Test()
+    print(Fluent.Options)
+end
+Init()
+Test()
+local Window = Fluent:CreateWindow({
+    Title = "NA脚本" .. Fluent.Version,
+    SubTitle = "NA完全免费",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = true, 
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.LeftControl
+})
+local Options = Fluent.Options
+Fluent:Notify({
+        Title = "NA脚本",
+        Content = "欢迎使用",
+        SubContent = "欢迎UI", 
+        Duration = 5
+})
+local Tabs = {
+    Settings = Window:AddTab({ Title = "脚本", Icon = "code" }),
+    Main = Window:AddTab({ Title = "其他", Icon = "code" }),
+    Main = Window:AddTab({ Title = "FE", Icon = "code" }),
+    Main = Window:AddTab({ Title = "翻译", Icon = "code" }),
+    Main = Window:AddTab({ Title = "设置", Icon = "bolt" })
+}
+Window:SelectTab(1)
