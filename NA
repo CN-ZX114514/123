@@ -28,6 +28,6 @@ local Tabs = {
     Main = Window:AddTab({ Title = "其他", Icon = "code" }),
     Main = Window:AddTab({ Title = "FE", Icon = "code" }),
     Main = Window:AddTab({ Title = "翻译", Icon = "code" }),
-    Main = Window:AddTab({ Title = "设置", Icon = "bolt" })
+    Main = Window:AddTab({ Title = "设置", Icon = "settings" })
 }
 Window:SelectTab(1)
