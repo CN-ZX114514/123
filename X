@@ -11,9 +11,9 @@ local Window = Fluent:CreateWindow({
     Title = "X脚本" .. Fluent.Version,
     SubTitle = "X完全免费",
     TabWidth = 160,
-    Size = UDim2.fromOffset(580, 460),
+    Size = UDim2.fromOffset(580, 360),
     Acrylic = true, 
-    Theme = "Dark",
+    Theme = "Amethyst",
     MinimizeKey = Enum.KeyCode.LeftControl
 })
 local Options = Fluent.Options
@@ -25,10 +25,13 @@ Fluent:Notify({
 })
 local Tabs = {
     Main = Window:AddTab({ Title = "主要", Icon = "boxes" }),
+    Main = Window:AddTab({ Title = "破解", Icon = "code" }),
+    Main = Window:AddTab({ Title = "外网", Icon = "code" }),
     Settings = Window:AddTab({ Title = "脚本", Icon = "code" }),
     Main = Window:AddTab({ Title = "其他", Icon = "code" }),
     Main = Window:AddTab({ Title = "FE", Icon = "code" }),
-    Main = Window:AddTab({ Title = "翻译", Icon = "languages" }),
-    Main = Window:AddTab({ Title = "设置", Icon = "settings" })
+    Main = Window:AddTab({ Title = "翻译", Icon = "code" }),
+    Main = Window:AddTab({ Title = "设置", Icon = "settings" }),
+    Main = Window:AddTab({ Title = "插件(不保存)", Icon = "box" }),
 }
 Window:SelectTab(1)
