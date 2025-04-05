@@ -1,4 +1,4 @@
-local WindUI = loadstring(game:HttpGet("https://tree-hub.vercel.app/api/UI/WindUI"))()
+ocal WindUI = loadstring(game:HttpGet("https://tree-hub.vercel.app/api/UI/WindUI"))()
 local Window = WindUI:CreateWindow({
     Title = "X脚本",
     Icon = "打开",
@@ -17,6 +17,7 @@ local Tabs = {
     SliderTab = Window:Tab({ Title = "其他", Icon = "settings-2", Desc = "其他脚本" }),
     CodeTab = Window:Tab({ Title = "FE", Icon = "code", Desc = "FE超强脚本但没有翻译" }),
     CodeTab = Window:Tab({ Title = "汉化", Icon = "code", Desc = "英文脚本汉化中文" }),
-    CodeTab = Window:Tab({ Title = "破解 Theme", Icon = "code", Desc = "破解脚本" }),
+    CodeTab = Window:Tab({ Title = "破解", Icon = "code", Desc = "破解脚本" }),
     CodeTab = Window:Tab({ Title = "设置", Icon = "settings", Desc = "修改脚本" }),
 }
+Window:SelectTab(1)
