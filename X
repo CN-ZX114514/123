@@ -30,10 +30,10 @@ local Tabs = {
     Settings = Window:AddTab({ Title = "脚本", Icon = "code" }),
     Main = Window:AddTab({ Title = "其他", Icon = "code" }),
     Main = Window:AddTab({ Title = "FE", Icon = "code" }),
-    Main = Window:AddTab({ Title = "翻译", Icon = "code" }),
-    Main = Window:AddTab({ Title = "Doors", Icon = "code" }),
-    Main = Window:AddTab({ Title = "ohio", Icon = "code" }),
-    Main = Window:AddTab({ Title = "造船寻宝", Icon = "code" }),
+    Main = Window:AddTab({ Title = "汉化", Icon = "code" }),
+    Main = Window:AddTab({ Title = "破解挑战", Icon = "code" }),
+    Main = Window:AddTab({ Title = "最强脚本", Icon = "code" }),
+    Main = Window:AddTab({ Title = "绕过反作弊", Icon = "code" }),
     Main = Window:AddTab({ Title = "设置", Icon = "settings" })
 }
 Window:SelectTab(1)
