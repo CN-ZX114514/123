@@ -1,4 +1,4 @@
-ocal WindUI = loadstring(game:HttpGet("https://tree-hub.vercel.app/api/UI/WindUI"))()
+local WindUI = loadstring(game:HttpGet("https://tree-hub.vercel.app/api/UI/WindUI"))()
 local Window = WindUI:CreateWindow({
     Title = "X脚本",
     Icon = "打开",
