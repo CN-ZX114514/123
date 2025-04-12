@@ -1,4 +1,4 @@
-cal Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "X脚本 | 主要",
    LoadingTitle = "加载中",
