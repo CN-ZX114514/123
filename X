@@ -1,23 +1,51 @@
-local WindUI = loadstring(game:HttpGet("https://tree-hub.vercel.app/api/UI/WindUI"))()
-local Window = WindUI:CreateWindow({
-    Title = "X脚本",
-    Icon = "打开",
-    Author = "X",
-    Folder = "X",
-    Size = UDim2.fromOffset(580, 360),
-    Transparent = true,
-    Theme = "Light",
-    SideBarWidth = 200,
-    HasOutline = false,
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "X脚本 | 主要",
+   LoadingTitle = "加载中",
+   LoadingSubtitle = "欢迎使用",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = X, 
+      FileName = "给你俩窝窝"
+   },
+   Window.ModifyTheme('AmberGlow'),
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink",
+      RememberJoins = true 
+   },
+   KeySystem = false,
+   KeySettings = {
+      Title = "Key System",
+      Subtitle = "Key System",
+      Note = "Go to my pastebin Jake0981",
+      FileName = "prohub", 
+      SaveKey = false,
+      GrabKeyFromSite = true,
+      Key = {"https://pastebin.com/raw/0jKb7ZvT"} 
+   }
 })
-local Tabs = {
-    CodeTab = Window:Tab({ Title = "主要", Icon = "boxes", Desc = "X主要" }),
-    CodeTab = Window:Tab({ Title = "脚本", Icon = "code", Desc = "中文" }),
-    CodeTab = Window:Tab({ Title = "外网", Icon = "code", Desc = "从scripterrbx或其他网站不带翻译" }),
-    SliderTab = Window:Tab({ Title = "其他", Icon = "settings-2", Desc = "其他脚本" }),
-    CodeTab = Window:Tab({ Title = "FE", Icon = "code", Desc = "FE超强脚本但没有翻译" }),
-    CodeTab = Window:Tab({ Title = "汉化", Icon = "code", Desc = "英文脚本汉化中文" }),
-    CodeTab = Window:Tab({ Title = "破解", Icon = "code", Desc = "破解脚本" }),
-    CodeTab = Window:Tab({ Title = "设置", Icon = "settings", Desc = "修改脚本" }),
-}
-Window:SelectTab(1)
+   local MainTab = Window:CreateTab("主要", "boxes")
+   local MainTab = Window:CreateTab("脚本中心", "code")
+   local MainTab = Window:CreateTab("破解脚本", "code") 
+   local MainTab = Window:CreateTab("翻译脚本", "code")
+   local Tab = Window:CreateTab("FE", "code")
+   Rayfield:Notify({
+   Title = "欢迎使用",
+   Content = "脚本已成功加载",
+   Duration = 5,
+   Image = "code",
+})
+Rayfield:Notify({
+   Title = "欢迎使用",
+   Content = "脚本已成功加载",
+   Duration = 5,
+   Image = "code",
+})
+local Button = Tab:CreateButton({
+   Name = "管理员",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end,
+})
+local MainTab = Window:CreateTab("其他脚本", "code")
