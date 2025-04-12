@@ -1,4 +1,4 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+cal Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "X脚本 | 主要",
    LoadingTitle = "加载中",
@@ -25,15 +25,9 @@ local Window = Rayfield:CreateWindow({
    }
 })
    local MainTab = Window:CreateTab("主要", "boxes")
-   local MainTab = Window:CreateTab("脚本中心", "code")
-   local Button = Tab:CreateButton({
-   Name = "皮",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
-   end,
-})
    local MainTab = Window:CreateTab("破解脚本", "code") 
    local MainTab = Window:CreateTab("翻译脚本", "code")
+   local MainTab = Window:CreateTab("脚本中心", "code")
    local Tab = Window:CreateTab("FE", "code")
    Rayfield:Notify({
    Title = "欢迎使用",
