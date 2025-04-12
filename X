@@ -24,12 +24,7 @@ local Window = Rayfield:CreateWindow({
       Key = {"https://pastebin.com/raw/0jKb7ZvT"} 
    }
 })
-   local MainTab = Window:CreateTab("主要", "boxes")
-   local MainTab = Window:CreateTab("破解脚本", "code") 
-   local MainTab = Window:CreateTab("翻译脚本", "code")
-   local MainTab = Window:CreateTab("脚本中心", "code")
-   local Tab = Window:CreateTab("FE", "code")
-   Rayfield:Notify({
+Rayfield:Notify({
    Title = "欢迎使用",
    Content = "脚本已成功加载",
    Duration = 5,
@@ -41,7 +36,18 @@ Rayfield:Notify({
    Duration = 5,
    Image = "code",
 })
-local Button = Tab:CreateButton({
+   local MainTab = Window:CreateTab("主要", "boxes")
+   local MainTab = Window:CreateTab("破解脚本", "code") 
+   local MainTab = Window:CreateTab("翻译脚本", "code")
+   local Button = Tab:CreateButton({
+   Name = "Fly",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/CN-ZX114514/123/refs/heads/main/XFly"))()
+   end,
+})
+   local MainTab = Window:CreateTab("脚本中心", "code")
+   local Tab = Window:CreateTab("FE", "code")
+   local Button = Tab:CreateButton({
    Name = "管理员",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
