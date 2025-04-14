@@ -1,15 +1,5 @@
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "X脚本通知";
-	Text = "暂时无法正常使用";
-	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 5;
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "X脚本通知";
-	Text = "请等待重制版发布";
-	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 5;
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "X脚本通知"";
-	Text = "Bug太多了";
+	Text = "🌿暂时无法正常使用请等待重置版🌿";
 	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
 Duration = 5;
