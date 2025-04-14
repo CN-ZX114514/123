@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "X脚本 | 通用",
-   Icon = 0, 
+   Icon = 4483362458, 
    LoadingTitle = "X脚本",
    LoadingSubtitle = "请等待加载",
    Theme = "AmberGlow", 
@@ -41,11 +41,35 @@ Rayfield:Notify({
    Image = "code",
 })
 local Tab = Window:CreateTab("主要", 4483362458)
-local Label = Tab:CreateLabel("功能🌱", 4483362458, Color3.fromRGB(255, 255, 255), false)
+local Label = Tab:CreateLabel("功能🌱", 4483362458, Color3.fromRGB(146, 214, 100), false)
+local Input = Tab:CreateInput({
+   Name = "速度",
+   CurrentValue = "",
+   PlaceholderText = "请输入",
+   RemoveTextAfterFocusLost = true,
+   Flag = "Input1",
+   Callback = function(Text)
+   end,
+})
+local Input = Tab:CreateInput({
+   Name = "跳跃高度",
+   CurrentValue = "",
+   PlaceholderText = "请输入",
+   RemoveTextAfterFocusLost = true,
+   Flag = "Input1",
+   Callback = function(Text)
+   end,
+})
+local Label = Tab:CreateLabel("脚本🌱", 4483362458, Color3.fromRGB(146, 214, 100), false)
 local Tab = Window:CreateTab("其他", 4483362458)
+local Label = Tab:CreateLabel("脚本🍃", 4483362458, Color3.fromRGB(146, 214, 100), false)
 local Tab = Window:CreateTab("汉化", 4483362458)
 local Tab = Window:CreateTab("脚本中心", 4483362458)
 local Tab = Window:CreateTab("FE", 4483362458)
+local Label = Tab:CreateLabel("脚本🌱", 4483362458, Color3.fromRGB(146, 214, 100), false)
 local Tab = Window:CreateTab("汉化FE", 4483362458)
+local Label = Tab:CreateLabel("脚本🌱", 4483362458, Color3.fromRGB(146, 214, 100), false)
 local Tab = Window:CreateTab("破解", 4483362458)
+local Label = Tab:CreateLabel("脚本🌱", 4483362458, Color3.fromRGB(146, 214, 100), false)
 local Tab = Window:CreateTab("X脚本", 4483362458)
+local Label = Tab:CreateLabel("X脚本🌱", 4483362458, Color3.fromRGB(146, 214, 100), false)
