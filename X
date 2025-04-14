@@ -1,5 +1,51 @@
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "X脚本通知";
-	Text = "🌿暂时无法正常使用请等待重置版🌿";
-	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 5;
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "X脚本 | 通用",
+   Icon = 0, 
+   LoadingTitle = "X脚本",
+   LoadingSubtitle = "请等待加载",
+   Theme = "AmberGlow", 
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, 
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = X, 
+      FileName = "X"
+   },
+   Discord = {
+      Enabled = false, 
+      Invite = "noinvitelink", 
+      RememberJoins = true 
+   },
+   KeySystem = false, 
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", 
+      FileName = "Key", 
+      SaveKey = true, 
+      GrabKeyFromSite = false, 
+      Key = {"Hello"} 
+   }
+})
+Rayfield:Notify({
+   Title = "通知",
+   Content = "脚本已成功加载",
+   Duration = 6.5,
+   Image = "code",
+})
+Rayfield:Notify({
+   Title = "X脚本",
+   Content = "已打开通用",
+   Duration = 6.5,
+   Image = "code",
+})
+local Tab = Window:CreateTab("主要", 4483362458)
+local Label = Tab:CreateLabel("功能🌱", 4483362458, Color3.fromRGB(255, 255, 255), false)
+local Tab = Window:CreateTab("其他", 4483362458)
+local Tab = Window:CreateTab("汉化", 4483362458)
+local Tab = Window:CreateTab("脚本中心", 4483362458)
+local Tab = Window:CreateTab("FE", 4483362458)
+local Tab = Window:CreateTab("汉化FE", 4483362458)
+local Tab = Window:CreateTab("破解", 4483362458)
+local Tab = Window:CreateTab("X脚本", 4483362458)
