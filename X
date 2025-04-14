@@ -1,56 +1,13 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-local Window = Rayfield:CreateWindow({
-   Name = "X脚本 | 主要",
-   LoadingTitle = "加载中",
-   LoadingSubtitle = "欢迎使用",
-   ConfigurationSaving = {
-      Enabled = true,
-      FolderName = X, 
-      FileName = "给你俩窝窝"
-   },
-   Discord = {
-      Enabled = false,
-      Invite = "noinvitelink",
-      RememberJoins = true 
-   },
-   KeySystem = false,
-   KeySettings = {
-      Title = "Key System",
-      Subtitle = "Key System",
-      Note = "Go to my pastebin Jake0981",
-      FileName = "prohub", 
-      SaveKey = false,
-      GrabKeyFromSite = true,
-      Key = {"https://pastebin.com/raw/0jKb7ZvT"} 
-   }
-})
 Rayfield:Notify({
-   Title = "欢迎使用",
-   Content = "脚本已成功加载",
+   Title = "X脚本",
+   Content = "目前无法使用",
    Duration = 5,
    Image = "code",
 })
 Rayfield:Notify({
    Title = "X脚本",
-   Content = "通用模式",
+   Content = "请等待重制",
    Duration = 5,
    Image = "code",
 })
-   local MainTab = Window:CreateTab("主要", "boxes")
-   local MainTab = Window:CreateTab("破解脚本", "code") 
-   local MainTab = Window:CreateTab("翻译脚本", "code")
-   local Button = Tab:CreateButton({
-   Name = "Fly",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/CN-ZX114514/123/refs/heads/main/XFly"))()
-   end,
-})
-   local MainTab = Window:CreateTab("脚本中心", "code")
-   local Tab = Window:CreateTab("FE", "code")
-   local Button = Tab:CreateButton({
-   Name = "管理员",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-   end,
-})
-local MainTab = Window:CreateTab("其他脚本", "code")
