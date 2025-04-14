@@ -1,13 +1,15 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-Rayfield:Notify({
-   Title = "X脚本",
-   Content = "目前无法使用",
-   Duration = 5,
-   Image = "code",
-})
-Rayfield:Notify({
-   Title = "X脚本",
-   Content = "请等待重制",
-   Duration = 5,
-   Image = "code",
-})
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "X脚本通知";
+	Text = "暂时无法正常使用";
+	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 5;
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "X脚本通知";
+	Text = "请等待重制版发布";
+	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 5;
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "X脚本通知"";
+	Text = "Bug太多了";
+	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 5;
