@@ -72,6 +72,7 @@ local Label = Tab:CreateLabel("附属脚本🍃", 4483362458, Color3.fromRGB(146
 local Button = Tab:CreateButton({
    Name = "自然灾害",
    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CN-ZX114514/123/refs/heads/main/X.F"))()
    end,
 })
 local Tab = Window:CreateTab("其他", 4483362458)
