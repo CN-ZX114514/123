@@ -72,18 +72,35 @@ local Label = Tab:CreateLabel("附属脚本🍃", 4483362458, Color3.fromRGB(146
 local Button = Tab:CreateButton({
    Name = "自然灾害",
    Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CN-ZX114514/123/refs/heads/main/X.F"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/CN-ZX114514/123/refs/heads/main/X.F"))()
    end,
 })
 local Tab = Window:CreateTab("其他", 4483362458)
 local Label = Tab:CreateLabel("脚本🍃", 4483362458, Color3.fromRGB(146, 214, 100), false)
+local Button = Tab:CreateButton({
+   Name = "DOORS脚本BOB",
+   Callback = function()
+   loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+   end,
+})
 local Tab = Window:CreateTab("汉化", 4483362458)
 local Label = Tab:CreateLabel("脚本🍃", 4483362458, Color3.fromRGB(146, 214, 100), false)
 local Tab = Window:CreateTab("脚本中心", 4483362458)
+local Button = Tab:CreateButton({
+   Name = "皮脚本",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
+   end,
+})
 local Label = Tab:CreateLabel("脚本🍃", 4483362458, Color3.fromRGB(146, 214, 100), false)
 local Tab = Window:CreateTab("FE", 4483362458)
 local Label = Tab:CreateLabel("脚本🌱", 4483362458, Color3.fromRGB(146, 214, 100), false)
-local Tab = Window:CreateTab("汉化FE", 4483362458)
-local Label = Tab:CreateLabel("脚本🌱", 4483362458, Color3.fromRGB(146, 214, 100), false)
+local Button = Tab:CreateButton({
+   Name = "监狱人生",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
+   end,
+})
 local Tab = Window:CreateTab("破解", 4483362458)
-local Label = Tab:CreateLabel("脚本🌱", 4483362458, Color3.fromRGB(146, 214, 100), false)
+local Label = Tab:CreateLabel("随手破解", 4483362458, Color3.fromRGB(146, 214, 100), false)
+local Label = Tab:CreateLabel("其他人破解", 4483362458, Color3.fromRGB(146, 214, 100), false)
