@@ -1,9 +1,9 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+ocal Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "X脚本 | ？？？",
+   Name = "",
    Icon = 0, 
-   LoadingTitle = "X脚本",
-   LoadingSubtitle = "请等待加载",
+   LoadingTitle = "",
+   LoadingSubtitle = "",
    Theme = "AmberGlow", 
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, 
@@ -30,15 +30,13 @@ local Window = Rayfield:CreateWindow({
 })
 Rayfield:Notify({
    Title = "通知",
-   Content = "已被入侵(娱乐)",
+   Content = "请等待更新当前版本0.13A未检查驱动",
    Duration = 6.5,
    Image = "code",
 })
 Rayfield:Notify({
    Title = "X脚本",
-   Content = "Error-Code-100*100*30*69",
+   Content = "无法连接至X脚本访问库",
    Duration = 6.5,
    Image = "code",
 })
-local Tab = Window:CreateTab("？？？", 4483362458)
-local Label = Tab:CreateLabel("被入侵了(娱乐)", 4483362458, Color3.fromRGB(146, 214, 100), false)
