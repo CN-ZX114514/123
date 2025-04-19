@@ -8,7 +8,7 @@ local Window = Rayfield:CreateWindow({
    DisableRayfieldPrompts = false,
    DisableBuildWarnings = false, 
    ConfigurationSaving = {
-      Enabled = false,
+      Enabled = ture,
       FolderName = X, 
       FileName = "X"
    },
@@ -46,7 +46,7 @@ local Input = Tab:CreateInput({
    Name = "速度",
    CurrentValue = "",
    PlaceholderText = "请输入",
-   RemoveTextAfterFocusLost = true,
+   RemoveTextAfterFocusLost = false,
    Flag = "Input1",
    Callback = function(Text)
    end,
@@ -55,7 +55,7 @@ local Input = Tab:CreateInput({
    Name = "跳跃高度",
    CurrentValue = "",
    PlaceholderText = "请输入",
-   RemoveTextAfterFocusLost = true,
+   RemoveTextAfterFocusLost = false,
    Flag = "Input1",
    Callback = function(Text)
    end,
@@ -83,18 +83,103 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
    end,
 })
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "X脚本 | 通用",
+   Icon = 0, 
+   LoadingTitle = "X脚本",
+   LoadingSubtitle = "请等待加载",
+   Theme = "DarkBlue", 
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, 
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = X, 
+      FileName = "X"
+   },
+   Discord = {
+      Enabled = false, 
+      Invite = "noinvitelink", 
+      RememberJoins = true 
+   },
+   KeySystem = false, 
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", 
+      FileName = "Key", 
+      SaveKey = true, 
+      GrabKeyFromSite = false, 
+      Key = {"Hello"} 
+   }
+})
+Rayfield:Notify({
+   Title = "通知",
+   Content = "脚本已成功加载",
+   Duration = 6.5,
+   Image = "code",
+})
+Rayfield:Notify({
+   Title = "X脚本",
+   Content = "已打开通用",
+   Duration = 6.5,
+   Image = "code",
+})
+local Tab = Window:CreateTab("主要", 4483362458)
+local Label = Tab:CreateLabel("功能🌱", 4483362458, Color3.fromRGB(255, 192, 203), false)
+local Input = Tab:CreateInput({
+   Name = "速度",
+   CurrentValue = "",
+   PlaceholderText = "请输入",
+   RemoveTextAfterFocusLost = false,
+   Flag = "Input1",
+   Callback = function(Text)
+   end,
+})
+local Input = Tab:CreateInput({
+   Name = "跳跃高度",
+   CurrentValue = "",
+   PlaceholderText = "请输入",
+   RemoveTextAfterFocusLost = false,
+   Flag = "Input1",
+   Callback = function(Text)
+   end,
+})
+local Label = Tab:CreateLabel("设置🌱", 4483362458, Color3.fromRGB(255, 192, 203), false)
+local ColorPicker = Tab:CreateColorPicker({
+    Name = "修改颜色",
+    Color = Color3.fromRGB(255,192,203),
+    Flag = "ColorPicker1",
+    Callback = function(Value)
+    end
+})
+local Label = Tab:CreateLabel("附属脚本🍃", 4483362458, Color3.fromRGB(255, 192, 203), false)
+local Button = Tab:CreateButton({
+   Name = "自然灾害",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/CN-ZX114514/123/refs/heads/main/X.F"))()
+   end,
+})
+local Tab = Window:CreateTab("其他", 4483362458)
+local Label = Tab:CreateLabel("脚本🍃", 4483362458, Color3.fromRGB(255, 192, 203), false)
+local Button = Tab:CreateButton({
+   Name = "DOORS脚本BOB",
+   Callback = function()
+   loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\53\84\119\84\56\106\97"))()
+   end,
+})
 local Tab = Window:CreateTab("汉化", 4483362458)
-local Label = Tab:CreateLabel("脚本🍃", 4483362458, Color3.fromRGB(146, 214, 100), false)
+local Label = Tab:CreateLabel("脚本🍃", 4483362458, Color3.fromRGB(255, 192, 203), false)
 local Tab = Window:CreateTab("脚本中心", 4483362458)
+local Label = Tab:CreateLabel("脚本🍃", 4483362458, Color3.fromRGB(255, 192, 203), false)
 local Button = Tab:CreateButton({
    Name = "皮脚本",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
    end,
 })
-local Label = Tab:CreateLabel("脚本🍃", 4483362458, Color3.fromRGB(146, 214, 100), false)
 local Tab = Window:CreateTab("FE", 4483362458)
-local Label = Tab:CreateLabel("脚本🌱", 4483362458, Color3.fromRGB(146, 214, 100), false)
+local Label = Tab:CreateLabel("脚本🌱", 4483362458, Color3.fromRGB(255, 192, 203), false)
 local Button = Tab:CreateButton({
    Name = "监狱人生",
    Callback = function()
@@ -102,11 +187,11 @@ local Button = Tab:CreateButton({
    end,
 })
 local Tab = Window:CreateTab("破解", 4483362458)
-local Label = Tab:CreateLabel("其他人破解", 4483362458, Color3.fromRGB(146, 214, 100), false)
+local Label = Tab:CreateLabel("其他人破解", 4483362458, Color3.fromRGB(255, 192, 203), false)
 local Button = Tab:CreateButton({
    Name = "白",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/mohun-sciprt/ScriptGetter/refs/heads/main/baicreacked.lua"))()
    end,
 })
-local Label = Tab:CreateLabel("随手破解", 4483362458, Color3.fromRGB(146, 214, 100), false)
+local Label = Tab:CreateLabel("随手破解", 4483362458, Color3.fromRGB(255, 192, 203), false)
