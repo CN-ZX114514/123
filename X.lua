@@ -83,7 +83,7 @@ local settingsTable = {
 
 	},
 	System = {
-		usageAnalytics = {Type = 'toggle', Value = true, Name = 'Anonymised Analytics'},
+		usageAnalytics = {Type = 'toggle', Value = true, Name = '匿名分析'},
 	}
 }
 
@@ -114,7 +114,7 @@ local function loadSettings()
 			-- for debug in studio
 			if useStudio then
 				file = [[
-		{"General":{"rayfieldOpen":{"Value":"K","Type":"bind","Name":"隐藏脚本按键","Element":{"HoldToInteract":false,"Ext":true,"Name":"隐藏脚本按键","Set":null,"CallOnChange":true,"Callback":null,"CurrentKeybind":"K"}}},"System":{"usageAnalytics":{"Value":false,"Type":"toggle","Name":"Anonymised Analytics","Element":{"Ext":true,"Name":"Anonymised Analytics","Set":null,"CurrentValue":false,"Callback":null}}}}
+		{"General":{"rayfieldOpen":{"Value":"K","Type":"bind","Name":"隐藏脚本按键","Element":{"HoldToInteract":false,"Ext":true,"Name":"隐藏脚本按键","Set":null,"CallOnChange":true,"Callback":null,"CurrentKeybind":"K"}}},"System":{"usageAnalytics":{"Value":false,"Type":"toggle","Name":"匿名分析","Element":{"Ext":true,"Name":"匿名分析","Set":null,"CurrentValue":false,"Callback":null}}}}
 	]]
 			end
 
@@ -406,7 +406,7 @@ local RayfieldLibrary = {
 			Shadow = Color3.fromRGB(255, 192, 203),
 
 			NotificationBackground = Color3.fromRGB(255, 192, 203),
-			NotificationActionsBackground = Color3.fromRGB(240, 240, 250),
+			NotificationActionsBackground = Color3.fromRGB(255, 192, 203),
 
 			TabBackground = Color3.fromRGB(255, 192, 203),
 			TabStroke = Color3.fromRGB(255, 192, 203),
@@ -618,7 +618,7 @@ local CoreGui = getService("CoreGui")
 
 -- Interface Management
 
-local Rayfield = useStudio and script.Parent:FindFirstChild('Rayfield') or game:GetObjects("rbxassetid://10804731440")[1]
+local Rayfield = useStudio and script.Parent:FindFirstChild('Rayfield') or game:GetObjects("rbxassetid://118116984262733")[1]
 local buildAttempts = 0
 local correctBuild = false
 local warned
@@ -638,7 +638,7 @@ repeat
 		warned = true
 	end
 
-	toDestroy, Rayfield = Rayfield, useStudio and script.Parent:FindFirstChild('Rayfield') or game:GetObjects("rbxassetid://10804731440")[1]
+	toDestroy, Rayfield = Rayfield, useStudio and script.Parent:FindFirstChild('Rayfield') or game:GetObjects("rbxassetid://118116984262733")[1]
 	if toDestroy and not useStudio then toDestroy:Destroy() end
 
 	buildAttempts = buildAttempts + 1
@@ -1151,9 +1151,9 @@ local function Hide(notify: boolean?)
 	Debounce = true
 	if notify then
 		if useMobilePrompt then 
-			RayfieldLibrary:Notify({Title = "Interface Hidden", Content = "The interface has been hidden, you can unhide the interface by tapping 'Show Rayfield'.", Duration = 7, Image = 4400697855})
+			RayfieldLibrary:Notify({Title = "界面隐藏", Content = "界面已被隐藏您可以通过点击显示Rayfield来显示界面'.", Duration = 7, Image = 4400697855})
 		else
-			RayfieldLibrary:Notify({Title = "Interface Hidden", Content = `The interface has been hidden, you can unhide the interface by tapping {settingsTable.General.rayfieldOpen.Value or 'K'}.`, Duration = 7, Image = 4400697855})
+			RayfieldLibrary:Notify({Title = "界面隐藏", Content = `The interface has been hidden, you can unhide the interface by tapping {settingsTable.General.rayfieldOpen.Value or 'K'}.`, Duration = 7, Image = 4400697855})
 		end
 	end
 
