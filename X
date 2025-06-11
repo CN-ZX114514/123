@@ -39,6 +39,6 @@ local Button = Tab:CreateButton({
 })
 local Button = Tab:CreateButton({
    Name = "升级版",
-   
+   Callback = function()
    end,
 })
