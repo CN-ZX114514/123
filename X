@@ -40,5 +40,11 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "升级版",
    Callback = function()
+   Rayfield:Notify({
+   Title = "暂未制作",
+   Content = "请等待",
+   Duration = 6.5,
+   Image = 4483362458,
+})
    end,
 })
