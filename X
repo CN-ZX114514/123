@@ -34,7 +34,7 @@ local Tab = Window:CreateTab("脚本", 4483362458)
 local Button = Tab:CreateButton({
    Name = "普通版",
    Callback = function()
-   
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/CN-ZX114514/X1/refs/heads/main/Xcentre"))()
    end,
 })
 local Button = Tab:CreateButton({
